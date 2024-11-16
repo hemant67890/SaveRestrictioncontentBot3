@@ -30,6 +30,6 @@ async def stats(client, message):
 **Total Users** : {users}
 **Premium Users** : {len(premium)}
 
-**__Powered by SUJAY 😎__**
+**__Powered by 🐦‍🔥𝐓𝐇𝐄𝐑𝐌𝐎𝐏𝐎𝐋𝐈™🥷 🐦‍🔥__**
 """)
   
