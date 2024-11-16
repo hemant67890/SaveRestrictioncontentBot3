@@ -84,13 +84,13 @@ async def get_seconds(time_string):
 
 
 
-PROGRESS_BAR = """\n
-**__Completed__** : {1}/{2}
-**__Bytes__** : {0}%
-**__Speed__** : {3}/s
-**__Time__** : {4}
-"""
-
+PROGRESS_BAR = """\n╭──💥▒ 𝐁𝐨𝐭 𝐒𝐭𝐚𝐭𝐢𝐜𝐬 ▓💥──╮ 
+├🧲 𝗦𝗶𝘇𝗲 ➠ {2}
+├⚡ 𝗦𝗽𝗲𝗲𝗱 ➠ {3}/s
+├🧭 𝗣𝗿𝗼𝗴𝗿𝗲𝘀𝘀 ➠ {0}%
+├🗂️ 𝗟𝗼𝗮𝗱𝗲𝗱 ➠ {1} 
+├⏳ 𝗘𝗧𝗔 ➠ {4}
+╰── 🐦‍🔥𝐓𝐇𝐄𝐑𝐌𝐎𝐏𝐎𝐋𝐈™🥷 🐦‍🔥 ──╯"""
 
 async def progress_bar(current, total, ud_type, message, start):
 
@@ -108,8 +108,8 @@ async def progress_bar(current, total, ud_type, message, start):
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
         progress = "{0}{1}".format(
-            ''.join(["🟢" for i in range(math.floor(percentage / 10))]),
-            ''.join(["🔴" for i in range(10 - math.floor(percentage / 10))]))
+            ''.join(["▰" for i in range(math.floor(percentage / 10))]),
+            ''.join(["▱" for i in range(10 - math.floor(percentage / 10))]))
             
         tmp = progress + PROGRESS_BAR.format( 
             round(percentage, 2),
